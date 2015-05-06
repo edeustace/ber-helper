@@ -1,0 +1,17 @@
+.fa.large{
+  font-size: 20px;
+  cursor: pointer;
+}
+.fa.large:hover{
+   color: red;
+}
+
+.remodal{
+  width: 400px;
+  height: 400px;
+}
+
+.modal-content{
+  text-align: left;
+  line-height: 1;
+}

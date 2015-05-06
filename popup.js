@@ -7,15 +7,14 @@
      var raw = document.evaluate(xpath, document.body, null, XPathResult.STRING_TYPE, null);
      var match = raw.stringValue.match('BER No\\. ([0-9]*)');
      if(match.length == 2){
-      return match[1]; 
+      return match[1];
      } else {
       return null;
      }
     }
 
     var berNo = getBerNo();
-
-    
+    console.log('found ber number: ', berNo);
   }
 
   document.addEventListener('DOMContentLoaded', function() {

@@ -1,17 +1,41 @@
 {
   "manifest_version": 2,
 
-  "name": "Getting started example",
+  "name": "ber-helper",
   "description": "This extension shows a Google Image search result for the current page",
   "version": "1.0",
+  "permissions": [
+    "http://daft.ie/*",
+    "tabs",
+    "activeTab"
+  ],
+  "web_accessible_resources":[
+    "bower_components/font-awesome/fonts/*"
+  ],
   "content_scripts": [
     {
+      "matches": ["http://www.daft.ie/*", "http://www.myhome.ie/*"],
+      "js": [
+        "ber-helper.js",
+        "bower_components/jquery/dist/jquery.min.js",
+        "bower_components/remodal/dist/jquery.remodal.js"
+        ],
+      "css" : [
+          "bower_components/font-awesome/css/font-awesome.min.css",
+          "bower_components/remodal/dist/jquery.remodal.css",
+          "css/main.css"
+        ],
+      "run_at" : "document_start"
+    },
+    {
       "matches": ["http://www.daft.ie/*"],
-      "js": ["popup.js"],
+      "js": ["ber-daft.js"],
+      "run_at" : "document_start"
+    },
+    {
+      "matches": ["http://www.myhome.ie/*"],
+      "js": ["ber-myhome.js"],
       "run_at" : "document_start"
     }
-  ],
-  "permissions": [
-    "tabs", "http://daft.ie/*"
   ]
 }
