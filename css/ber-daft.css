@@ -1,0 +1,11 @@
+.ber-helper{
+  padding-top: 0px;
+  padding-left: 10px;
+  position: absolute;
+}
+
+.ber-helper > a{
+  font-size: 12px;
+  text-decoration: underline;
+  cursor: pointer;
+}
