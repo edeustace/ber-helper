@@ -9,19 +9,15 @@
     "tabs",
     "activeTab"
   ],
-  "web_accessible_resources":[
-    "bower_components/font-awesome/fonts/*"
-  ],
   "content_scripts": [
     {
       "matches": ["http://www.daft.ie/*", "http://www.myhome.ie/*"],
       "js": [
-        "ber-helper.js",
+        "js/ber-helper.js",
         "bower_components/jquery/dist/jquery.min.js",
         "bower_components/remodal/dist/jquery.remodal.js"
         ],
       "css" : [
-          "bower_components/font-awesome/css/font-awesome.min.css",
           "bower_components/remodal/dist/jquery.remodal.css",
           "css/main.css"
         ],
@@ -29,12 +25,14 @@
     },
     {
       "matches": ["http://www.daft.ie/*"],
-      "js": ["ber-daft.js"],
+      "js": ["js/ber-daft.js"],
+      "css" : ["css/ber-daft.css"],
       "run_at" : "document_start"
     },
     {
       "matches": ["http://www.myhome.ie/*"],
-      "js": ["ber-myhome.js"],
+      "js": ["js/ber-myhome.js"],
+      "css": ["css/ber-myhome.css"],
       "run_at" : "document_start"
     }
   ]

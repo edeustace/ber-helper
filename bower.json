@@ -1,6 +1,7 @@
 {
   "name": "ber-helper",
   "dependencies": {
-    "font-awesome": "~4.3.0"
+    "jquery": "~2.1.4",
+    "remodal": "~0.6.4"
   }
 }

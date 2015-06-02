@@ -8,10 +8,35 @@
 
 .remodal{
   width: 400px;
-  height: 400px;
 }
 
 .modal-content{
   text-align: left;
   line-height: 1;
+}
+
+.modal-header{
+  font-size: 13px;
+}
+
+.modal-footer{
+  font-size: 10px;
+}
+
+.ber-helper-entry{
+}
+
+.ber-helper-icon{
+  font-size: 10px;
+}
+
+.ber-helper-label{
+  padding: 3px;
+  font-size: 12px;
+  font-style: bold;
+}
+
+.ber-helper-value{
+  padding: 3px;
+  font-size: 12px;
 }
