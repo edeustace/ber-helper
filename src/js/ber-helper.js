@@ -33,14 +33,13 @@
     $('body').append(bg);
     $('body').append(modal);
 
-    var fa = document.createElement('style');
+    var fa = doc.createElement('style');
     fa.type = 'text/css';
     fa.textContent = '@font-face { font-family: FontAwesome; src: url("' +
       chrome.extension.getURL('bower_components/font-awesome/fonts/fontawesome-webfont.woff?v=4.0.3') +
       '"); }';
 
-    document.head.appendChild(fa);
-
+    doc.head.appendChild(fa);
 
     function capitalize(l) {
       var arr = l.split('-');

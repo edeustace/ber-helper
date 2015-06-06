@@ -1,6 +1,6 @@
 var gulp = require('gulp');
 var jshint = require('gulp-jshint');
-var jasmine = require('gulp-jasmine');
+var jasmine = require('gulp-jasmine-phantom');
 
 gulp.task('default', function() {
   // place code for your default task here
@@ -14,5 +14,10 @@ gulp.task('jshint', function() {
 });
 
 gulp.task('test', function(){
-  return gulp.src('test/js/**-spec.js').pipe(jasmine());
+  return gulp.src(['src/js/**/*.js', 'test/js/**-spec.js']).pipe(jasmine({
+    integration: true,
+    vendor: [
+      'bower_components/jquery/dist/jquery.min.js'
+    ]
+  }));
 });
