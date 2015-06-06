@@ -1,0 +1,11 @@
+{
+  "name": "ber-helper",
+  "description": "a chrome extension to load ber info into myhome.ie + daft.ie",
+  "version": "0.0.1",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "~3.9.0",
+    "gulp-jasmine": "^2.0.1",
+    "gulp-jshint": "~1.11.0"
+  }
+}

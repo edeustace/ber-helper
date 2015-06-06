@@ -18,7 +18,6 @@
     '</div>'
   ].join('');
 
-
   function url(n) {
     return 'http://better-ber.herokuapp.com/' + n + '.json';
   }
