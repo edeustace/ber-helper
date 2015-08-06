@@ -1,11 +1,18 @@
 {
   "manifest_version": 2,
 
+  "icons": {
+    "16": "icons/16.png",
+    "48": "icons/48.png",
+    "128": "icons/128.png" },
+
+
   "name": "ber-helper",
-  "description": "This extension shows a Google Image search result for the current page",
-  "version": "1.0",
+  "description": "This extension adds additional ber information to myhome.ie and daft.ie property pages",
+  "version": "1.1",
   "permissions": [
     "http://daft.ie/*",
+    "http://www.myhome.ie/*",
     "tabs",
     "activeTab"
   ],
@@ -15,7 +22,7 @@
       "js": [
         "js/ber-helper.js",
         "bower_components/jquery/dist/jquery.min.js",
-        "bower_components/remodal/dist/jquery.remodal.js"
+        "bower_components/remodal/dist/jquery.remodal.min.js"
         ],
       "css" : [
           "bower_components/remodal/dist/jquery.remodal.css",
